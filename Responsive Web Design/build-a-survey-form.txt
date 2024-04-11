@@ -1,0 +1,184 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title" class="heading_h1">freeCodeCamp Survey Form</h1>
+        <p id="description" class="heading_desc">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form" class="form_parent">
+        <fieldset>
+            <label id="name-label" for="name">
+                Name 
+            </label>
+            <input id="name" type="text" placeholder="Enter your name" required />
+            <label id="email-label" for="email">
+                Email 
+            </label>
+            <input id="email" type="email" placeholder="Enter your Email" required />
+            <label id="number-label" for="name">
+                Age <span>(optional)</span> 
+            </label>
+            <input id="number" type="number" placeholder="Age" min="18" max="120" />
+            <label for="name">
+                Which option best describes your current role?
+            </label>
+            <select id="dropdown" name="role" >
+                <option value="0" disabled selected >Select current role</option>
+                <option value="3" >Student</option>
+                <option value="1" >Full Time Job</option>
+                <option value="2" >Full Time Learner</option>
+                <option value="4" >Prefer not to say</option>
+                <option value="5" >Other</option>
+            </select>
+        </fieldset>
+
+
+        <fieldset>
+            <label for="name">
+                    Would you recommend freeCodeCamp to a friend?
+                <label><input value="0" type="radio" name="recommend" checked/>Definitely</label>
+                <label><input value="012" type="radio" name="recommend"/>Maybe</label>        
+                <label><input value="01" type="radio" name="recommend"/>Not sure</label>
+            </label>
+            <label>
+                What is your favorite feature of freeCodeCamp?
+                <select name="">
+                    <option value="0" disabled selected>Select an option</option>
+                    <option value="3">Challenges</option>
+                    <option value="1">Projects</option>
+                    <option value="2">Community</option>
+                    <option value="4">Open source</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="name">
+                What would you like to see improved? 
+                <span>(Check all that apply)</span>
+                <label><input class="inline" value="0" type="checkbox" />Front-end Projects</label>
+                <label><input class="inline" value="01" type="checkbox" />Back-end Projects</label>
+                <label><input class="inline" value="0123" type="checkbox" />Data Visualization</label>
+                <label><input class="inline" value="012" type="checkbox" />Challenges</label>
+                <label><input class="inline" value="01234" type="checkbox" />Open Source Community</label>
+                <label><input class="inline" value="012345" type="checkbox" />Gitter help rooms</label>
+                <label><input class="inline" value="0123456" type="checkbox" />Videos</label>
+                <label><input class="inline" value="01234567" type="checkbox" />City Meetups</label>
+                <label><input class="inline" value="012345678" type="checkbox" />Wiki</label>
+                <label><input class="inline" value="012345679" type="checkbox" />Forum</label>
+                <label><input class="inline" value="012345670" type="checkbox" />Additional Cources</label>
+         </label>
+        </fieldset>
+
+
+        <fieldset>
+            <label for="name">
+                Any comments or suggestions?
+                <textarea placeholder="Enter your comment here..." rows="5" cols="30"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <button id="submit" type="submit">
+                Submit
+            </button>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+** end of undefined **
+
+
+
+
+** start of undefined **
+
+body {
+    margin :0px;
+    padding: 0px;
+    background-color: rgb(101 101 160);
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+header h1{
+    padding: 0;
+}
+header p{
+    padding: 0;
+    font-style: italic;
+}
+.form_parent {
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(27 27 50 / 80%);
+    padding: 50px 50px;
+    border-radius: 25px 25px;
+    font-size: 1.25rem;
+}
+label{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+select,input {
+    margin: 10px 0 0 0;
+    width: 100%;
+    padding: 5px;
+    min-height: 2em;
+    border-radius: 10px 10px;
+}
+select {
+    min-height: 3em !important;
+}
+input[type='radio'],.inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+
+fieldset {
+    border: none;
+
+}
+
+textarea { 
+    padding: 5px;
+    font-size: 1.25rem;
+    margin: 10px 0 0 0;
+    width: 100%;
+    border-radius: 10px 10px;
+    min-height: 10em;
+}
+input[type='textarea']::placeholder{
+    text-align: start;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    min-height: 3em;
+    background-color: #37af65;
+    color: white;
+    font-weight:600;
+}
+button:hover{
+    cursor: pointer;
+}
+
+** end of undefined **
+

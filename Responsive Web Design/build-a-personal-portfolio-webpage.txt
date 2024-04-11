@@ -1,0 +1,351 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+          crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="nav" id="navbar">
+        <ul class="nav-list">
+            <li>
+                <a href="#welcome-section">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="#projects">
+                    Work
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Home Section -->
+    <section class="welcome-section" id="welcome-section">
+        <h1>
+            Hey, I am Yageysh Bobde
+        </h1>
+        <p>a web developer</p>
+    </section>
+    <!-- Project Section -->
+    <section class="projects-section" id="projects">
+        <h2 class="projects-section-header">
+            These are some of my projects
+        </h2>
+        <div class="projects-grid">
+            <a href="" 
+            target="_blank"
+            class="project project-tile">
+               <img src="https://codepen.io/freeCodeCamp/full/zNqgVx" alt="project" class="project-image"> 
+               <p class="project-title">
+                    <span class="code"><</span>
+                     Tribute Page
+                    <span class="code">/></span>
+               </p>
+            </a>
+            <a href="" 
+            target="_blank"
+            class="project project-tile">
+               <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="project" class="project-image"> 
+               <p class="project-title">
+                    <span class="code"><</span>
+                    Random Quote Machine
+                    <span class="code">/></span>
+               </p>
+            </a>
+            <a href="" 
+            target="_blank"
+            class="project project-tile">
+               <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="project" class="project-image"> 
+               <p class="project-title">
+                    <span class="code"><</span>
+                    JavaScript Calculator
+                    <span class="code">/></span>
+               </p>
+            </a>
+            <a href=""
+               target="_blank"
+               class="project project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+                     alt="project"
+                     class="project-image">
+                <p class="project-title">
+                    <span class="code"><</span>
+                    Map Data Across the Globe
+                    <span class="code">/></span>
+                </p>
+            </a>
+            <a href=""
+               target="_blank"
+               class="project project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+                     alt="project"
+                     class="project-image">
+                <p class="project-title">
+                    <span class="code"><</span>
+                    Wikipedia Viewer
+                    <span class="code">/></span>
+                </p>
+            </a>
+            <a href=""
+               target="_blank"
+               class="project project-tile">
+                <img src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+                     alt="project"
+                     class="project-image">
+                <p class="project-title">
+                    <span class="code"><</span>
+                    Tic Tac Toe Game
+                    <span class="code">/></span>
+                </p>
+            </a>
+        </div>
+        <a href="">
+            Show all
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </section>
+
+    <!-- Connect -->
+    <section class="contact-section" id="contact">
+        <div class="contact-section-header">
+            <h2>Let's work together...</h2>
+            <p>How do you take your coffee?</p>
+        </div>
+        <div class="contact-links">
+            <a href="" target="_blank" id='profile-link'>
+              <i class="fab fa-github"></i>  
+              Github
+            </a>
+            <a href="" target="_blank">
+              <i class="fab fa-linkedin"></i>  
+              Linkedin
+            </a>
+            <a href="" target="_blank">
+              <i class="fab fa-twitter"></i>  
+              Twitter
+            </a>
+            <!-- <a href="mailto:yagyeshsrbobde@gmail.com" target="_blank">
+              <i class="fab fa-at"></i>  
+              Mail
+            </a>
+            <a href="tel:885-588-6289" target="_blank">
+              <i class="fab fa-mobile-alt"></i>  
+              Call Me
+            </a> -->
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>
+            **This is just a fake portfolio. All the projects and contact details
+            given are not real.
+        </p>
+        <p>
+        © Created for
+        <a href="https://www.youtube.com/channel/UCdocreWF_jvXS40MldjmiEQ" target="_blank">
+            Developers Zone
+        </a>
+        </p>
+    </footer>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root{
+    --main-red: #be3144;
+    --main-blue : #45567d;
+    --main-gray : #303841;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: 400;
+    font-size: 1.8rem;
+    overflow-x:hidden;
+}
+
+
+/* Navbar */
+.nav{
+    display : flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+}
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+    justify-content: space-evenly;
+    gap : 50px;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:active {
+    color: initial;
+}
+
+
+/* Welcome section */
+.welcome-section {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0% , #181719);
+
+}
+.welcome-section > h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center ;
+    font-size : 3rem;
+    margin-bottom: 0;
+}
+.welcome-section > p{ 
+    font-size: 1.1rem;
+    font-weight: lighter;
+    font-style: italic;
+    color: var(--main-red);
+    margin-top: 0;
+}
+
+
+/* projects section */
+.projects-section {
+    text-align: center;
+    background: var(--main-blue);
+    padding: 10rem 2rem;
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom : 0.2rem solid #fff;
+}
+
+.projects-grid {
+    display : grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px , 1fr));
+    grid-gap : 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin : 0 auto;
+    margin-bottom : 6rem;
+}
+
+/* Single project card */
+.project {
+    background : var(--main-gray);
+    box-shadow : 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+}
+
+img {
+    display: block;
+}
+.project-image {
+    height: calc(100% - 6rem);
+    width: 100%;
+    object-fit: cover;
+}
+.project-title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.code {
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+}
+
+/* Contact Section */
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--main-gray);
+}
+.contact-section-header> h2  {
+    margin-bottom: 0;
+}
+.contact-section-header > p {
+    margin-top: 0;
+    font-style: italic;
+    font-size: small;
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+.contact-links > a {
+    font-size: large;
+}
+
+
+/* FOOTER */
+footer {
+    font-weight: 300;
+    border-top: 4px solid var(--main-red);
+    padding: 2rem;
+    background: var(--main-gray);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: medium;
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 728px) {
+    footer{
+        padding: 0 150px;
+    }
+}
+
+** end of undefined **
+

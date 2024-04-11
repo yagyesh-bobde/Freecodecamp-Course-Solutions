@@ -1,0 +1,468 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+</head>
+<body>
+    <header class="" id="header">
+        <div class="logo">
+            <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li>
+                    <a href="#feature" class="nav-link">
+                        Features
+                    </a>
+                </li>
+                <li>
+                    <a href="#how-it-works"
+                       class="nav-link">
+                    How It Works
+                </a>
+                </li>
+                <li>
+                    <a href="#pricing"
+                       class="nav-link">
+                    Pricing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h2>
+            Handcrafted, home-made masterpieces
+        </h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" placeholder="Enter your email address" name="email" />
+            <input id="submit" type="submit" value="Get Started" class="btn" />
+        </form>
+    </section>
+    <div class="container">
+        <section class="" id="feature">
+            <div class="feature-item">
+                <div class="icon">
+                    <i class="fa fa-3x fa-fire"></i>
+                </div>
+                <div class="desc">
+                    <h2>Premium Materials</h2>
+                    <p>
+                        Our trombones use the shiniest brass which is sourced locally.
+                        This will increase the longevity of your purchase.
+                    </p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="icon">
+                    <i class="fa fa-3x fa-truck"></i>
+                </div>
+                <div class="desc">
+                    <h2>Fast Shipping</h2>
+                    <p>
+                        We make sure you recieve your trombone as soon as we have
+                        finished making it. We also provide free returns if you are not
+                        satisfied.
+                    </p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="icon">
+                    <i class="fa fa-3x fa-battery-full"></i>
+                </div>
+                <div class="desc">
+                    <h2>Quality Assurance</h2>
+                    <p>
+                        For every purchase you make, we will ensure there are no damages
+                        or faults and we will check and test the pitch of your
+                        instrument.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="" id="how-it-works">
+           <iframe id="video" width="600" height="360" src="https://youtube.com/embed/y8Yv4pnO7qc" ></iframe>
+        </section>
+        
+        <section class="" id="pricing">
+            <div class="product" id="tenor" >
+                <div class="level">
+                    Tenor Trombone
+                </div>
+                <h2>$600</h2>
+                <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <div class="button-div">
+                    <button class="btn">
+                        Select
+                    </button>
+                </div>
+            </div>
+            <div class="product" id="bass" >
+                <div class="level">
+                    Bass Trombone
+                </div>
+                <h2>$900</h2>
+                <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <div class="button-div">
+                    <button class="btn">
+                        Select
+                    </button>
+                </div>
+            </div>
+            <div class="product" id="valve" >
+                <div class="level">
+                    Valve Trombone
+                </div>
+                <h2>$1200</h2>
+                <ol>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                </ol>
+                <div class="button-div">
+                    <button class="btn">
+                        Select
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <ul>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Contact</li>
+            </ul>    
+            <span>
+                Copyright 2016, Original Trombones
+            </span>
+        </footer>
+    </div>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
+
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#hero , #container {
+    width: 100%;
+
+}
+
+#container {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height:5vh;
+    width: 100%;
+    max-width: 100vw;
+    padding: 20px 0;
+    background: #eee;
+}
+.logo{
+    background: #eee;
+}
+#header > div > img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 100%;
+    margin-left: 20px;
+}
+
+nav > ul{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 35vw; 
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.2em;
+    display: flex;
+}
+
+nav ul li a {
+    font-size: medium;
+    color : black;
+    text-decoration: none;
+}
+
+
+
+/* Hero form section */
+#hero {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+#hero > h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#hero > form {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+#hero>form > input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#hero input[type="email"] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+
+#hero input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+    font-size: medium;
+    padding: 5px;
+    text-align: center;
+}
+.btn {
+    padding: 0 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* Container */
+section > div[class="feature-item"] {
+    display: flex;
+    align-items: center;
+    margin: 50px 10px;
+}
+
+.feature-item > .icon {
+    min-width: 150px;
+    text-align: center;
+    color: darkorange;
+}
+
+.feature-item> .desc > h2 {
+    font-weight: bold;
+}
+
+#how-it-works {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* PRicing */
+#pricing {
+    display : flex;
+    margin: 20px 0; 
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#pricing > .product {
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 10px;
+    width: calc(100% / 3) ;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    gap : 15px;
+}
+.product > ol > li {
+    list-style: none;
+}
+
+.level {
+    padding: 15px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    background: #ddd;
+    position : absolute;
+    top: 0;
+}
+.product h2 {
+    margin-top: 75px;
+}
+
+.product > ol {
+    display: flex;
+    flex-direction: column;
+}
+.product>ol> li {
+    margin : 2px 0;
+}
+.product > div > button {
+    width: min-content;
+    font-weight: 500;
+    background-color: #f1c40f;
+    height: 45px;
+    border: 0;
+    font-size: 1em;
+}
+
+.product > .button-div {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+footer {
+    display : flex;
+    flex-direction: column;
+    width: 100%;
+    background : #ddd;
+    align-items: flex-end;
+    justify-content: center;
+    height: 75px;
+    gap: 10px;
+}
+
+footer > ul {
+    width: 35%;
+    display : flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer>ul>li {
+    list-style: none;
+}
+
+footer > span {
+    text-align: center;
+    width: 35%;
+    opacity: 0.6;
+}
+
+/* MEDIA Querries */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0 25px;
+    }
+    header {
+        min-height: 75px;
+        flex-direction: column;
+    }
+    #logo > img {
+        max-width: 400px;
+    }
+    #hero {
+        margin-top: 125px ;
+    }
+    #nav-bar > ul> li {
+        margin : 2px 0;
+    }
+    #features > .feature-item {
+        flex-direction: column;
+    }
+        .feature-item>.desc {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    #how-it-works > iframe {
+        width: 480px;
+        height: 320px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #header nav ul {
+        flex-direction: column;
+    }
+    #header>nav > ul {
+        flex-direction: column;
+    }
+    #pricing  {
+        flex-direction: column;
+    }
+        #pricing>.product {
+            width: 45%;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+** end of undefined **
+
